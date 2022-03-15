@@ -17,24 +17,24 @@ BufferTool
     Select Tool     ${buffer}
     Type Name   ${name}
     Select Vector   buffer   ${search}   ${vector}
-    Type Distance_Resolution_Quadsegs  80   10  10
+    Type Distance_Resolution_Quadsegs   20  20  80
     Select Cap Style  Square
     Select Join Style  Mitre
-##    đang không xóa được giá trị default và bị thêm mới vào sau
-    Type Mitre Limit  3
+    Type Mitre Limit    2
     Click Submit Button
+    Check Success Notification
 
 *** Keywords ***
 Type Distance_Resolution_Quadsegs
-    [Arguments]     ${dis}     ${_resolution}   ${quad}
-    input text  ${distance}    ${_distance}
+    [Arguments]    ${_resolution}   ${quad}     ${dis}
+    press keys  ${distance}     CONTROL+A+DELETE
+    input text  ${distance}    ${dis}
     input text  ${buffer_resolution}   ${_resolution}
-    input text  ${quadsegs}     ${_quadsegs}
+    input text  ${quadsegs}     ${quad}
 
 Select Cap Style
     [Arguments]     ${option}
-    press keys    ${cap_style}  ${option}\n
-    press keys  ${cap_style}    TAB
+    press keys    ${cap_style}  ${option}\n+TAB
 
 Select Join Style
     [Arguments]     ${option}
@@ -42,7 +42,9 @@ Select Join Style
 
 Type Mitre Limit
     [Arguments]      ${mi}
+    press keys     ${mitre_limit}   BACKSPACE   #or press key  ${mitre_limit}   \\08
     input text   ${mitre_limit}   ${mi}
+
 
 
 

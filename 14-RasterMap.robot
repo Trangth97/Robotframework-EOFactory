@@ -1,36 +1,36 @@
 *** Settings ***
-Documentation  Test Intersect tool.
+Documentation  Test Raster Map tool.
 Resource  ./Login.robot
 Resource    ./Vector/PageObject/Page.robot
 Test Teardown  Close Browser
 
 *** Variables ***
-${name}     test intersect
+${type}     id:vectortools_typeList_union
+${name}     test union
 ${input_features}   input_features
 
 *** Test Cases ***
-IntersectTool
+UnionTool
     Login To Page And Open Workspace
     Click Vector Menu
     Click Vector Toolkit
-    Select Tool     ${intersect}
+    Select Tool     ${union}
     Type Name  ${name}
     Select Features
-    Select Join Attributes  Only
-    press keys  None    TAB
-    Select Output Type  Line
+    Select Join Attributes  No fid
+    Select Gaps  No
     Click Submit Button
     Check Success Notification
 
 *** Keywords ***
 Select Features
     click element  //*[@id="areaBound"]/div/div[3]/div/div/div[1]/div[1]/form/div[4]/div[1]/div/div/div[1]
-    input text  id:vectortools_intersect_vector     ${input_features}\n
-    press keys  id:vectortools_intersect_vector    TAB
+    input text  id:vectortools_union_input_features     ${input_features}\n
+    press keys  id:vectortools_union_input_features    TAB
 
-Select Output Type
-    [Arguments]     ${type}
-    press keys  None    ${type}\n
+Select Gaps
+    [Arguments]  ${option}
+    press keys  None  ${option}\n
 
 
 

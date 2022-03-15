@@ -19,6 +19,7 @@ RectifyTool
     Select Vector     ${search}   ${vector}
     Type Resolution  10
     Click Submit Button
+    Check Success Notification
 
 *** Keywords ***
 Select Vector

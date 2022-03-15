@@ -32,10 +32,12 @@ KmeansTool
     Type Random state  1
     Select Algorithm  F
     Click Submit Button
+    Check Success Notification
 
 *** Keywords ***
 Type Number of Clusters
     [Arguments]  ${clusters}
+    press keys  ${number_of_clusters}     CONTROL+A+DELETE
     input text   ${number_of_clusters}   ${clusters}
 
 Open Advance Option
@@ -48,18 +50,22 @@ Select Method
 
 Type Number of init
     [Arguments]  ${number}
+    press keys  ${number_of_init}     CONTROL+A+DELETE
     input text  ${number_of_init}   ${number}
 
 Type Maximum iterations
     [Arguments]  ${value}
+    press keys  ${maximum_iterations}     CONTROL+A+DELETE
     input text  ${maximum_iterations}   ${value}
 
 Type Relative tolerance
     [Arguments]  ${value}
+    press keys  ${relative_tolerance}     CONTROL+A+DELETE
     input text      ${relative_tolerance}   ${value}
 
 Type Verbosity mode
     [Arguments]  ${value}
+    press keys  ${verbosity_mode}     CONTROL+A+DELETE
     input text  ${verbosity_mode}   ${value}
 
 Type Random state

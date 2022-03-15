@@ -18,6 +18,7 @@ CentroidTool
     Type Name   ${name}
     Select Vector   centroid   ${search}   ${vector}
     Click Submit Button
+    Check Success Notification
 
 *** Keywords ***
 Type Username

@@ -20,6 +20,7 @@ SymmetricalDifferenceTool
     Select Feature  symmetrical_difference  update_features     ${update_features}
     Select Join Attributes  No fid
     Click Submit Button
+    Check Success Notification
 
 *** Keywords ***
 

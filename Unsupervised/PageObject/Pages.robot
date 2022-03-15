@@ -3,6 +3,8 @@ Library  Selenium2Library
 Variables  ./Unsupervised_Locators.py
 
 *** Variables ***
+${notification_success}  id:success_notification
+${SUCCESS_NOTIFICATION}  Successful
 
 *** Keywords ***
 Click Map Menu
@@ -36,6 +38,11 @@ Select Image
 
 Click Submit Button
     click button  ${confirm_button}
+
+Check Success Notification
+    wait until element is visible  ${notification_success}
+    ${notification}     get text  ${notification_success}
+    should contain  ${notification}     ${SUCCESS_NOTIFICATION}
 
 
 

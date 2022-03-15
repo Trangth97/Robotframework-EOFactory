@@ -22,6 +22,7 @@ ClipTool
     Select Vector   clip   ${search}   ${vector}
     input text  ${mask_layer_locator}    ${mask_layer}\n
     Click Submit Button
+    Check Success Notification
 
 *** Keywords ***
 

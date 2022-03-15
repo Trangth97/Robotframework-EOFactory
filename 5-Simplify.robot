@@ -18,14 +18,14 @@ SimplifyTool
     Select Tool  ${simplify}
     Type Name   ${name}
     Select Vector  simplify   ${search}   ${vector}
-#    đnag lỗi giá trị default không xóa được mà giá trị mới đưọc thêm vào sau
-    press keys  ${tolerance}    \Backspace     #delete all
     Type Tolerance  80
-
     Click Submit Button
+    Check Success Notification
+
 *** Keywords ***
 Type Tolerance
     [Arguments]      ${tol}
+    press keys  ${tolerance}    CONTROL+A+DELETE
     input text   ${tolerance}    ${tol}
 
 

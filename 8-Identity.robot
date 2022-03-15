@@ -21,6 +21,7 @@ IdentityTool
     Select Join Attributes  Only
     Select Relationship  Keep
     Click Submit Button
+    Check Success Notification
 
 *** Keywords ***
 Select Relationship

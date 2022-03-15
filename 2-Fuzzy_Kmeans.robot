@@ -22,19 +22,23 @@ IsodataTool
     Type Movement Threshold     0.02
     Type Background Gray Level Value    1
     Click Submit Button
+    Check Success Notification
 
 *** Keywords ***
 Type Number of Clusters Center
     [Arguments]  ${clusters}
+    press keys   ${number_of_clusters_center}     CONTROL+A+DELETE
     input text   ${number_of_clusters_center}   ${clusters}
 
 Type Maximum Number of Iterations
     [Arguments]  ${value}
+    press keys  ${fuzzy_maximum_number_of_iterations}     CONTROL+A+DELETE
     input text      ${fuzzy_maximum_number_of_iterations}   ${value}
     press keys  None  TAB
 
 Type Movement Threshold
     [Arguments]  ${value}
+    press keys  ${fuzzy_movement_threshold}     CONTROL+A+DELETE
     input text  ${fuzzy_movement_threshold}   ${value}
     press keys  None  TAB
 

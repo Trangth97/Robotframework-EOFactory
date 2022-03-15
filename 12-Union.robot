@@ -20,6 +20,7 @@ UnionTool
     Select Join Attributes  No fid
     Select Gaps  No
     Click Submit Button
+    Check Success Notification
 
 *** Keywords ***
 Select Features

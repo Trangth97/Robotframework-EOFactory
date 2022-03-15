@@ -6,7 +6,7 @@ Test Teardown  Close Browser
 
 *** Variables ***
 ${name}     test row detection
-${vector}   vector_clip_1
+${vector}   vector_row
 ${search}   id:vectortools_rowDetection_vector_select2_searchInput
 
 
@@ -19,6 +19,7 @@ RowDetectionTool
     Type Name   ${name}
     Select Vector   rowDetection   ${search}   ${vector}
     Click Submit Button
+    Check Success Notification
 
 *** Keywords ***
 

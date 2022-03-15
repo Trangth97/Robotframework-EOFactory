@@ -20,6 +20,7 @@ UpdateTool
     Select Feature  update  update_features  ${update_features}
     Select Keep Borders     No
     Click Submit Button
+    Check Success Notification
 
 *** Keywords ***
 Select Keep Borders

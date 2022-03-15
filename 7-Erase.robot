@@ -19,6 +19,7 @@ EraseTool
     Select Feature  erase   input_features  ${input_features}
     Select Feature  erase   erase_features    ${erase_features}
     Click Submit Button
+    Check Success Notification
 
 *** Keywords ***
 

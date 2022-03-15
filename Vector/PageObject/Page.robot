@@ -2,6 +2,10 @@
 Library  Selenium2Library
 Variables  ./Vector_Locators.py
 
+*** Variables ***
+${notification_success}  id:success_notification
+${SUCCESS_NOTIFICATION}  Successful
+
 *** Keywords ***
 Click Vector Menu
     wait until element is visible  ${vector_menu}    10
@@ -41,6 +45,11 @@ Select Join Attributes
 
 Click Submit Button
     click button  ${confirm_button}
+
+Check Success Notification
+    wait until element is visible  ${notification_success}
+    ${notification}     get text  ${notification_success}
+    should contain  ${notification}     ${SUCCESS_NOTIFICATION}
 
 
 
