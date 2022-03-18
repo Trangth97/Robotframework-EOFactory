@@ -2,6 +2,9 @@
 Library  Selenium2Library
 Variables  ./Table_Locators.py
 
+*** Variables ***
+${SUCCESS_NOTIFICATION}  Successful
+
 *** Keywords ***
 Click Table Menu
     wait until element is visible  ${table_menu}    10
@@ -34,8 +37,24 @@ Select Vector
     click element  id:${vector}
     sleep  1
 
+Select Property
+    [Arguments]     ${prop}=None
+    click element  ${property_selection}
+#    select property
+    click element  ${close_btn}
+
 Click Submit Button
     click button  ${confirm_button}
+
+Confirm Pay Cost
+    wait until element is visible  ${pay_cost_button}
+    click button  ${pay_cost_button}
+
+Check Success Notification
+    wait until element is visible  ${notification_success}
+    ${notification}     get text  ${notification_success}
+    sleep  0.5
+    should contain  ${notification}     ${SUCCESS_NOTIFICATION}
 
 
 

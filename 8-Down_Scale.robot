@@ -18,6 +18,8 @@ DownScale
     Select Image   downscale    ${down_scale_image}
     Select Level  4
     Click Submit Button
+    Confirm Pay Cost
+    Check Success Notification
 
 *** Keywords ***
 Select Level

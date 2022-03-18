@@ -18,7 +18,10 @@ ZonalStatistics
     Type Name   ${name}
     Select Image  zonal_as_table    ${image}
     Select Vector  ${vector}
+    Select Property
     Click Submit Button
+    Confirm Pay Cost
+    Check Success Notification
 
 *** Keywords ***
 

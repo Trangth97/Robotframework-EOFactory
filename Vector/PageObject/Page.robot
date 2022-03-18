@@ -5,6 +5,8 @@ Variables  ./Vector_Locators.py
 *** Variables ***
 ${notification_success}  id:success_notification
 ${SUCCESS_NOTIFICATION}  Successful
+${upload_notification}  id:upload_success_notification
+${task_menu}    id:introduction-Tasks
 
 *** Keywords ***
 Click Vector Menu
@@ -50,6 +52,26 @@ Check Success Notification
     wait until element is visible  ${notification_success}
     ${notification}     get text  ${notification_success}
     should contain  ${notification}     ${SUCCESS_NOTIFICATION}
+
+#Check Task Is Not Error
+#    [Arguments]     ${sys_notification}  ${task_name}
+#    ${data_table}
+
+#Check Created Task Success
+#    [Arguments]     ${notification}    ${task_name}
+#    Check Success Notification
+#    click element  ${task_menu}
+#    sleep  3
+#
+#
+#    self.check_task_is_not_error(
+#            system_notification.split(':')[0], task_name)
+#
+#
+#        data_table = self.get_data_task_table()
+#        self.assert_true((data_table.loc[(data_table['task_id'] == task_id) & (data_table['status'] == 'Error')
+#                                         & (data_table['name'] == name)]).empty)
+
 
 
 

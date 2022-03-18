@@ -18,6 +18,8 @@ Mosaic
     Type Name   ${name}
     Select Multiple Images  mosaic  ${image_1}  ${image_2}
     Click Submit Button
+    Confirm Pay Cost
+    Check Success Notification
 
 *** Keywords ***
 

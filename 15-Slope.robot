@@ -17,6 +17,9 @@ Slope
     Type Name   ${name}
     Select Image    slope   ${image}
     Click Submit Button
+    Click Submit Button
+    Confirm Pay Cost
+    Check Success Notification
 
 *** Keywords ***
 

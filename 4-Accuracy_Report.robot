@@ -19,6 +19,8 @@ CloudFreeMosaic
     Select Image  accuracy_report   ${image}
     Select Reference Image  ${ref_image}
     Click Submit Button
+    Confirm Pay Cost
+    Check Success Notification
 
 *** Keywords ***
 Select Reference Image

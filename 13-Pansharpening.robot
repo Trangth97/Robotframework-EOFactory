@@ -16,10 +16,11 @@ Pansharpening
     Click Imagery Toolkit
     Select Tool     ${pansharpening}
     Type Name   ${name}
-    sleep  2
     Select Multispectral Image  ${multispectral_image}
     Select Panchromatic Image  ${panchromatic_image}
-#    Click Submit Button
+    Click Submit Button
+    Confirm Pay Cost
+    Check Success Notification
 
 *** Keywords ***
 Select Multispectral Image

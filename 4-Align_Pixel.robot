@@ -19,6 +19,8 @@ AlignPixel
     Select Image  ${image}
     Select Reference Image  ${ref_image}
     Click Submit Button
+    Confirm Pay Cost
+    Check Success Notification
 
 *** Keywords ***
 Select Image

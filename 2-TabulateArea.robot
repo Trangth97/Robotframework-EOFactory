@@ -23,7 +23,10 @@ TabulateAreaTool
     Select Mask Image  ${mask_image}
     Type Mask Value     ${value}
     Select Vector  ${vector}
+    Select Property
     Click Submit Button
+    Confirm Pay Cost
+    Check Success Notification
 
 *** Keywords ***
 Select Mask Image

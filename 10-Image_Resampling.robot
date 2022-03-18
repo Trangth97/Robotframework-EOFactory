@@ -18,10 +18,13 @@ ImageResampling
     Select Image    upscale   ${image}
     Type Level  3
     Click Submit Button
+    Confirm Pay Cost
+    Check Success Notification
 
 *** Keywords ***
 Type Level
     [Arguments]     ${level}
+    press keys  ${resampling_level}     CONTROL+A+DELETE
     input text  ${resampling_level}   ${level}
 
 

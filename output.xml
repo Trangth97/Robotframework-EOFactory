@@ -1,498 +1,299 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.9.5 on win32)" generated="20220315 17:40:55.326" rpa="false" schemaversion="2">
-<suite id="s1" name="3-Isodata" source="C:\Users\skymap\Desktop\Robotframework-EOFactory\3-Isodata.robot">
-<test id="s1-t1" name="IsodataTool">
+<robot generator="Robot 4.1.3 (Python 3.9.5 on win32)" generated="20220318 17:45:57.590" rpa="false" schemaversion="2">
+<suite id="s1" name="Training" source="C:\Users\skymap\Desktop\Robotframework-EOFactory\Training.robot">
+<test id="s1-t1" name="Training Classification">
 <kw name="Login To Page And Open Workspace" library="Login">
 <kw name="Open Browser" library="Selenium2Library">
 <arg>${LOGIN_URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220315 17:40:55.705" level="INFO">Opening browser 'chrome' to base url 'https://test.eofactory.ai:3443/signIn.html?redirect=http://localhost:8080/authentication?token='.</msg>
-<status status="PASS" starttime="20220315 17:40:55.705" endtime="20220315 17:40:57.702"/>
+<msg timestamp="20220318 17:45:57.980" level="INFO">Opening browser 'chrome' to base url 'https://test.eofactory.ai:3443/signIn.html?redirect=http://localhost:8080/authentication?token='.</msg>
+<status status="PASS" starttime="20220318 17:45:57.980" endtime="20220318 17:46:00.143"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${username}</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220315 17:40:57.702" endtime="20220315 17:40:57.859"/>
+<status status="PASS" starttime="20220318 17:46:00.143" endtime="20220318 17:46:00.289"/>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220315 17:40:57.859" endtime="20220315 17:40:57.984"/>
+<status status="PASS" starttime="20220318 17:46:00.289" endtime="20220318 17:46:00.420"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>${username}</arg>
 <arg>${USER_EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 17:40:57.984" level="INFO">Typing text 'minhngoccnter@gmail.com' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20220315 17:40:57.984" endtime="20220315 17:40:58.292"/>
+<msg timestamp="20220318 17:46:00.421" level="INFO">Typing text 'minhngoccnter@gmail.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20220318 17:46:00.421" endtime="20220318 17:46:00.726"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>${password}</arg>
 <arg>${USER_PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 17:40:58.293" level="INFO">Typing text 'admin' into text field 'id:password'.</msg>
-<status status="PASS" starttime="20220315 17:40:58.292" endtime="20220315 17:40:58.498"/>
+<msg timestamp="20220318 17:46:00.727" level="INFO">Typing text 'admin' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20220318 17:46:00.727" endtime="20220318 17:46:00.903"/>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <arg>${btn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220315 17:40:58.498" level="INFO">Clicking button 'id:login'.</msg>
-<status status="PASS" starttime="20220315 17:40:58.498" endtime="20220315 17:40:58.606"/>
+<msg timestamp="20220318 17:46:00.903" level="INFO">Clicking button 'id:login'.</msg>
+<status status="PASS" starttime="20220318 17:46:00.903" endtime="20220318 17:46:01.031"/>
 </kw>
 <kw name="Open Workspace" library="Login">
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <arg>${wks}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220315 17:40:58.607" endtime="20220315 17:41:04.906"/>
+<status status="PASS" starttime="20220318 17:46:01.032" endtime="20220318 17:46:07.984"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <arg>${wks}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:04.907" level="INFO">Clicking element 'id:workspace_recent_workShare_item_0'.</msg>
-<status status="PASS" starttime="20220315 17:41:04.906" endtime="20220315 17:41:04.996"/>
+<msg timestamp="20220318 17:46:07.985" level="INFO">Clicking element 'id:workspace_recent_workShare_item_0'.</msg>
+<status status="PASS" starttime="20220318 17:46:07.985" endtime="20220318 17:46:08.068"/>
 </kw>
-<status status="PASS" starttime="20220315 17:40:58.606" endtime="20220315 17:41:04.997"/>
+<status status="PASS" starttime="20220318 17:46:01.031" endtime="20220318 17:46:08.068"/>
 </kw>
-<status status="PASS" starttime="20220315 17:40:55.704" endtime="20220315 17:41:04.997"/>
+<status status="PASS" starttime="20220318 17:45:57.980" endtime="20220318 17:46:08.068"/>
 </kw>
-<kw name="Click Map Menu" library="Pages">
+<kw name="Go to Training" library="Page">
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>${map_menu}</arg>
-<arg>10</arg>
+<arg>${training_btn}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220315 17:41:04.998" endtime="20220315 17:41:10.526"/>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<arg>${map_menu}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:10.526" level="INFO">Clicking element 'id:introduction-Maps'.</msg>
-<status status="PASS" starttime="20220315 17:41:10.526" endtime="20220315 17:41:10.793"/>
-</kw>
-<status status="PASS" starttime="20220315 17:41:04.998" endtime="20220315 17:41:10.793"/>
-</kw>
-<kw name="Click Tools Toolbar" library="Pages">
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>${toolbar_button}</arg>
-<arg>5</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220315 17:41:10.794" endtime="20220315 17:41:11.083"/>
+<status status="PASS" starttime="20220318 17:46:08.069" endtime="20220318 17:46:13.853"/>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
-<arg>${toolbar_button}</arg>
+<arg>${training_btn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:11.084" level="INFO">Clicking button 'id:map_snackBar_ardButton'.</msg>
-<status status="PASS" starttime="20220315 17:41:11.083" endtime="20220315 17:41:11.342"/>
+<msg timestamp="20220318 17:46:13.854" level="INFO">Clicking button 'id:map-introduction-4'.</msg>
+<status status="PASS" starttime="20220318 17:46:13.853" endtime="20220318 17:46:14.680"/>
 </kw>
-<status status="PASS" starttime="20220315 17:41:10.794" endtime="20220315 17:41:11.342"/>
+<status status="PASS" starttime="20220318 17:46:08.069" endtime="20220318 17:46:14.680"/>
 </kw>
-<kw name="Select Unsupervised Toolkit" library="Pages">
+<kw name="Type Training input" library="Page">
+<arg>${ten}</arg>
+<arg>${type}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${model_name}</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220318 17:46:14.682" level="INFO">Typing text 'model_1' into text field 'id:model_name'.</msg>
+<status status="PASS" starttime="20220318 17:46:14.681" endtime="20220318 17:46:15.172"/>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<arg>${training_type}</arg>
+<arg>${type}\n</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220318 17:46:15.174" level="INFO">Sending key(s) ('classification\n',) to id:training_typeSelector element.</msg>
+<msg timestamp="20220318 17:46:15.605" level="INFO">Sending keys classification
+</msg>
+<status status="PASS" starttime="20220318 17:46:15.172" endtime="20220318 17:46:15.932"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>${continue_training_input}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220318 17:46:15.933" level="INFO">Clicking button 'id:continue_training_input'.</msg>
+<status status="PASS" starttime="20220318 17:46:15.933" endtime="20220318 17:46:16.100"/>
+</kw>
+<status status="PASS" starttime="20220318 17:46:14.681" endtime="20220318 17:46:16.100"/>
+</kw>
+<kw name="Select Image" library="Page">
+<arg>${image}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220318 17:46:16.606" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20220318 17:46:16.101" endtime="20220318 17:46:16.606"/>
+</kw>
 <kw name="Click Element" library="Selenium2Library">
-<arg>${toolkit_typeSelector}</arg>
+<arg>${image_selector}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:11.343" level="INFO">Clicking element 'class:mapview_toolkit_typeSelector'.</msg>
-<status status="PASS" starttime="20220315 17:41:11.343" endtime="20220315 17:41:11.566"/>
+<msg timestamp="20220318 17:46:16.606" level="INFO">Clicking element 'id:training_image'.</msg>
+<status status="PASS" starttime="20220318 17:46:16.606" endtime="20220318 17:46:17.029"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
-<arg>${unsupervised}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:11.567" level="INFO">Clicking element 'id:unsupervised'.</msg>
-<status status="PASS" starttime="20220315 17:41:11.567" endtime="20220315 17:41:11.801"/>
-</kw>
-<status status="PASS" starttime="20220315 17:41:11.342" endtime="20220315 17:41:11.802"/>
-</kw>
-<kw name="Select Tool" library="Pages">
-<arg>${isodata}</arg>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>${type_selector}</arg>
-<arg>5</arg>
+<arg>${search}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220315 17:41:11.803" endtime="20220315 17:41:11.888"/>
+<status status="PASS" starttime="20220318 17:46:17.029" endtime="20220318 17:46:17.298"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${search}</arg>
+<arg>${image}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220318 17:46:17.299" level="INFO">Typing text 'road_image' into text field 'id:training_image_imageSelector_searchInput'.</msg>
+<status status="PASS" starttime="20220318 17:46:17.299" endtime="20220318 17:46:17.885"/>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
-<arg>${type_selector}</arg>
+<arg>id:${image}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:11.889" level="INFO">Clicking element 'class:unsupervisedTool_typeSelector'.</msg>
-<status status="PASS" starttime="20220315 17:41:11.888" endtime="20220315 17:41:12.035"/>
+<msg timestamp="20220318 17:46:17.885" level="INFO">Clicking element 'id:road_image'.</msg>
+<status status="PASS" starttime="20220318 17:46:17.885" endtime="20220318 17:46:18.156"/>
 </kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>${continue_select_image}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220318 17:46:18.157" level="INFO">Clicking button 'id:continue_select_image'.</msg>
+<status status="PASS" starttime="20220318 17:46:18.156" endtime="20220318 17:46:18.323"/>
+</kw>
+<status status="PASS" starttime="20220318 17:46:16.100" endtime="20220318 17:46:18.323"/>
+</kw>
+<kw name="Select Destination Folder" library="Page">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${continue_select_folder}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220318 17:46:18.324" endtime="20220318 17:46:18.972"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>${continue_select_folder}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220318 17:46:18.973" level="INFO">Clicking button 'id:continue_select_folder'.</msg>
+<status status="PASS" starttime="20220318 17:46:18.972" endtime="20220318 17:46:19.130"/>
+</kw>
+<status status="PASS" starttime="20220318 17:46:18.324" endtime="20220318 17:46:19.130"/>
+</kw>
+<kw name="Training Dataset" library="Page">
+<arg>${area_layer}</arg>
+<arg>${class_layer}</arg>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220315 17:41:13.040" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220315 17:41:12.035" endtime="20220315 17:41:13.040"/>
+<msg timestamp="20220318 17:46:20.136" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220318 17:46:19.131" endtime="20220318 17:46:20.136"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
-<arg>${type}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:13.040" level="INFO">Clicking element 'id:unsupervisedTools_typeList_isodata'.</msg>
-<status status="PASS" starttime="20220315 17:41:13.040" endtime="20220315 17:41:13.254"/>
-</kw>
-<status status="PASS" starttime="20220315 17:41:11.802" endtime="20220315 17:41:13.254"/>
-</kw>
-<kw name="Type Name" library="Pages">
-<arg>${name}</arg>
-<kw name="Input Text" library="Selenium2Library">
-<arg>${name_of_result}</arg>
-<arg>${result_name}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:13.256" level="INFO">Typing text 'isodata_result' into text field 'id:unsupervisedTools_nameInput'.</msg>
-<status status="PASS" starttime="20220315 17:41:13.255" endtime="20220315 17:41:13.598"/>
-</kw>
-<status status="PASS" starttime="20220315 17:41:13.254" endtime="20220315 17:41:13.599"/>
-</kw>
-<kw name="Select Image" library="Pages">
-<arg>isodata</arg>
-<arg>${image}</arg>
-<kw name="Click Element" library="Selenium2Library">
-<arg>//*[@id="unsupervisedtools_${type}_image"]/div/div/div[1]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:13.601" level="INFO">Clicking element '//*[@id="unsupervisedtools_isodata_image"]/div/div/div[1]'.</msg>
-<status status="PASS" starttime="20220315 17:41:13.601" endtime="20220315 17:41:13.927"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>id:unsupervisedtools_${type}_image_imageSelector_searchInput</arg>
-<arg>${image_name}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:13.928" level="INFO">Typing text 'unsupervised_image' into text field 'id:unsupervisedtools_isodata_image_imageSelector_searchInput'.</msg>
-<status status="PASS" starttime="20220315 17:41:13.927" endtime="20220315 17:41:15.082"/>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<arg>id:${image_name}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:15.083" level="INFO">Clicking element 'id:unsupervised_image'.</msg>
-<status status="PASS" starttime="20220315 17:41:15.082" endtime="20220315 17:41:15.313"/>
-</kw>
-<status status="PASS" starttime="20220315 17:41:13.599" endtime="20220315 17:41:15.313"/>
-</kw>
-<kw name="Type Number of Clusters Desired">
-<arg>16</arg>
-<kw name="Press Keys" library="Selenium2Library">
-<arg>${number_of_clusters_desired}</arg>
-<arg>CONTROL+A+DELETE</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220315 17:41:15.315" level="INFO">Sending key(s) ('CONTROL+A+DELETE',) to id:unsupervisedtools_isodata_number_of_clusters_desired element.</msg>
-<msg timestamp="20220315 17:41:15.682" level="INFO">Pressing special key CONTROL down.</msg>
-<msg timestamp="20220315 17:41:15.682" level="INFO">Sending key A</msg>
-<msg timestamp="20220315 17:41:15.682" level="INFO">Pressing special key DELETE down.</msg>
-<msg timestamp="20220315 17:41:15.682" level="INFO">Releasing special key CONTROL.</msg>
-<msg timestamp="20220315 17:41:15.682" level="INFO">Releasing special key DELETE.</msg>
-<status status="PASS" starttime="20220315 17:41:15.314" endtime="20220315 17:41:15.746"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>${number_of_clusters_desired}</arg>
-<arg>${clusters}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:15.747" level="INFO">Typing text '16' into text field 'id:unsupervisedtools_isodata_number_of_clusters_desired'.</msg>
-<status status="PASS" starttime="20220315 17:41:15.746" endtime="20220315 17:41:15.977"/>
-</kw>
-<status status="PASS" starttime="20220315 17:41:15.314" endtime="20220315 17:41:15.977"/>
-</kw>
-<kw name="Type Minimum Number of Clusters">
-<arg>16</arg>
-<kw name="Press Keys" library="Selenium2Library">
-<arg>${mimnimum_number_of_clusters}</arg>
-<arg>CONTROL+A+DELETE</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220315 17:41:15.979" level="INFO">Sending key(s) ('CONTROL+A+DELETE',) to id:unsupervisedtools_isodata_minimum_number_of_clusters element.</msg>
-<msg timestamp="20220315 17:41:16.326" level="INFO">Pressing special key CONTROL down.</msg>
-<msg timestamp="20220315 17:41:16.326" level="INFO">Sending key A</msg>
-<msg timestamp="20220315 17:41:16.326" level="INFO">Pressing special key DELETE down.</msg>
-<msg timestamp="20220315 17:41:16.326" level="INFO">Releasing special key CONTROL.</msg>
-<msg timestamp="20220315 17:41:16.326" level="INFO">Releasing special key DELETE.</msg>
-<status status="PASS" starttime="20220315 17:41:15.978" endtime="20220315 17:41:16.409"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>${mimnimum_number_of_clusters}</arg>
-<arg>${number}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:16.410" level="INFO">Typing text '16' into text field 'id:unsupervisedtools_isodata_minimum_number_of_clusters'.</msg>
-<status status="PASS" starttime="20220315 17:41:16.409" endtime="20220315 17:41:16.658"/>
-</kw>
-<status status="PASS" starttime="20220315 17:41:15.977" endtime="20220315 17:41:16.658"/>
-</kw>
-<kw name="Type Maximum Number of Clusters">
-<arg>20</arg>
-<kw name="Press Keys" library="Selenium2Library">
-<arg>${maximum_number_of_clusters}</arg>
-<arg>CONTROL+A+DELETE</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220315 17:41:16.660" level="INFO">Sending key(s) ('CONTROL+A+DELETE',) to id:unsupervisedtools_isodata_maximum_number_of_clusters element.</msg>
-<msg timestamp="20220315 17:41:16.990" level="INFO">Pressing special key CONTROL down.</msg>
-<msg timestamp="20220315 17:41:16.990" level="INFO">Sending key A</msg>
-<msg timestamp="20220315 17:41:16.990" level="INFO">Pressing special key DELETE down.</msg>
-<msg timestamp="20220315 17:41:16.990" level="INFO">Releasing special key CONTROL.</msg>
-<msg timestamp="20220315 17:41:16.990" level="INFO">Releasing special key DELETE.</msg>
-<status status="PASS" starttime="20220315 17:41:16.659" endtime="20220315 17:41:17.047"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>${maximum_number_of_clusters}</arg>
-<arg>${value}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:17.048" level="INFO">Typing text '20' into text field 'id:unsupervisedtools_isodata_maximum_number_of_clusters'.</msg>
-<status status="PASS" starttime="20220315 17:41:17.047" endtime="20220315 17:41:17.304"/>
-</kw>
-<kw name="Press Keys" library="Selenium2Library">
-<arg>None</arg>
-<arg>TAB</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220315 17:41:17.305" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20220315 17:41:17.305" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20220315 17:41:17.305" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20220315 17:41:17.305" endtime="20220315 17:41:17.345"/>
-</kw>
-<status status="PASS" starttime="20220315 17:41:16.659" endtime="20220315 17:41:17.345"/>
-</kw>
-<kw name="Type Maximum Number of Iterations">
-<arg>20</arg>
-<kw name="Press Keys" library="Selenium2Library">
-<arg>${maximum_number_of_iterations}</arg>
-<arg>CONTROL+A+DELETE</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220315 17:41:17.347" level="INFO">Sending key(s) ('CONTROL+A+DELETE',) to id:unsupervisedtools_isodata_maximum_number_of_iterations element.</msg>
-<msg timestamp="20220315 17:41:17.661" level="INFO">Pressing special key CONTROL down.</msg>
-<msg timestamp="20220315 17:41:17.661" level="INFO">Sending key A</msg>
-<msg timestamp="20220315 17:41:17.661" level="INFO">Pressing special key DELETE down.</msg>
-<msg timestamp="20220315 17:41:17.661" level="INFO">Releasing special key CONTROL.</msg>
-<msg timestamp="20220315 17:41:17.661" level="INFO">Releasing special key DELETE.</msg>
-<status status="PASS" starttime="20220315 17:41:17.346" endtime="20220315 17:41:17.715"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>${maximum_number_of_iterations}</arg>
-<arg>${value}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:17.716" level="INFO">Typing text '20' into text field 'id:unsupervisedtools_isodata_maximum_number_of_iterations'.</msg>
-<status status="PASS" starttime="20220315 17:41:17.715" endtime="20220315 17:41:17.918"/>
-</kw>
-<kw name="Press Keys" library="Selenium2Library">
-<arg>None</arg>
-<arg>TAB</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220315 17:41:17.918" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20220315 17:41:17.918" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20220315 17:41:17.918" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20220315 17:41:17.918" endtime="20220315 17:41:17.947"/>
-</kw>
-<status status="PASS" starttime="20220315 17:41:17.345" endtime="20220315 17:41:17.947"/>
-</kw>
-<kw name="Type Movement Threshold">
-<arg>0.02</arg>
-<kw name="Press Keys" library="Selenium2Library">
-<arg>${movement_threshold}</arg>
-<arg>CONTROL+A+DELETE</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220315 17:41:17.949" level="INFO">Sending key(s) ('CONTROL+A+DELETE',) to id:unsupervisedtools_isodata_movement_threshold element.</msg>
-<msg timestamp="20220315 17:41:18.277" level="INFO">Pressing special key CONTROL down.</msg>
-<msg timestamp="20220315 17:41:18.277" level="INFO">Sending key A</msg>
-<msg timestamp="20220315 17:41:18.277" level="INFO">Pressing special key DELETE down.</msg>
-<msg timestamp="20220315 17:41:18.278" level="INFO">Releasing special key CONTROL.</msg>
-<msg timestamp="20220315 17:41:18.278" level="INFO">Releasing special key DELETE.</msg>
-<status status="PASS" starttime="20220315 17:41:17.948" endtime="20220315 17:41:18.351"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>${movement_threshold}</arg>
-<arg>${value}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:18.351" level="INFO">Typing text '0.02' into text field 'id:unsupervisedtools_isodata_movement_threshold'.</msg>
-<status status="PASS" starttime="20220315 17:41:18.351" endtime="20220315 17:41:18.633"/>
-</kw>
-<kw name="Press Keys" library="Selenium2Library">
-<arg>None</arg>
-<arg>TAB</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220315 17:41:18.634" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20220315 17:41:18.634" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20220315 17:41:18.634" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20220315 17:41:18.633" endtime="20220315 17:41:18.674"/>
-</kw>
-<status status="PASS" starttime="20220315 17:41:17.947" endtime="20220315 17:41:18.675"/>
-</kw>
-<kw name="Type Minimum Sample Threshold">
-<arg>6</arg>
-<kw name="Press Keys" library="Selenium2Library">
-<arg>${minimum_sample_threshold}</arg>
-<arg>CONTROL+A+DELETE</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220315 17:41:18.676" level="INFO">Sending key(s) ('CONTROL+A+DELETE',) to id:unsupervisedtools_isodata_minimum_sample_threshold element.</msg>
-<msg timestamp="20220315 17:41:18.993" level="INFO">Pressing special key CONTROL down.</msg>
-<msg timestamp="20220315 17:41:18.993" level="INFO">Sending key A</msg>
-<msg timestamp="20220315 17:41:18.993" level="INFO">Pressing special key DELETE down.</msg>
-<msg timestamp="20220315 17:41:18.993" level="INFO">Releasing special key CONTROL.</msg>
-<msg timestamp="20220315 17:41:18.993" level="INFO">Releasing special key DELETE.</msg>
-<status status="PASS" starttime="20220315 17:41:18.676" endtime="20220315 17:41:19.047"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>${minimum_sample_threshold}</arg>
-<arg>${value}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:19.047" level="INFO">Typing text '6' into text field 'id:unsupervisedtools_isodata_minimum_sample_threshold'.</msg>
-<status status="PASS" starttime="20220315 17:41:19.047" endtime="20220315 17:41:19.230"/>
-</kw>
-<kw name="Press Keys" library="Selenium2Library">
-<arg>None</arg>
-<arg>TAB</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220315 17:41:19.231" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20220315 17:41:19.231" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20220315 17:41:19.231" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20220315 17:41:19.230" endtime="20220315 17:41:19.259"/>
-</kw>
-<status status="PASS" starttime="20220315 17:41:18.675" endtime="20220315 17:41:19.259"/>
-</kw>
-<kw name="Type Standard Deviation">
-<arg>10</arg>
-<kw name="Press Keys" library="Selenium2Library">
-<arg>${standard_deviation}</arg>
-<arg>CONTROL+A+DELETE</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220315 17:41:19.261" level="INFO">Sending key(s) ('CONTROL+A+DELETE',) to id:unsupervisedtools_isodata_standard_deviation element.</msg>
-<msg timestamp="20220315 17:41:19.586" level="INFO">Pressing special key CONTROL down.</msg>
-<msg timestamp="20220315 17:41:19.586" level="INFO">Sending key A</msg>
-<msg timestamp="20220315 17:41:19.586" level="INFO">Pressing special key DELETE down.</msg>
-<msg timestamp="20220315 17:41:19.586" level="INFO">Releasing special key CONTROL.</msg>
-<msg timestamp="20220315 17:41:19.586" level="INFO">Releasing special key DELETE.</msg>
-<status status="PASS" starttime="20220315 17:41:19.260" endtime="20220315 17:41:19.635"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>${standard_deviation}</arg>
-<arg>${value}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:19.636" level="INFO">Typing text '10' into text field 'id:unsupervisedtools_isodata_standard_deviation'.</msg>
-<status status="PASS" starttime="20220315 17:41:19.636" endtime="20220315 17:41:19.880"/>
-</kw>
-<kw name="Press Keys" library="Selenium2Library">
-<arg>None</arg>
-<arg>TAB</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220315 17:41:19.881" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20220315 17:41:19.881" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20220315 17:41:19.881" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20220315 17:41:19.880" endtime="20220315 17:41:19.930"/>
-</kw>
-<status status="PASS" starttime="20220315 17:41:19.260" endtime="20220315 17:41:19.930"/>
-</kw>
-<kw name="Type Lumping Parameter">
-<arg>2</arg>
-<kw name="Press Keys" library="Selenium2Library">
-<arg>${lumping_parameter}</arg>
-<arg>CONTROL+A+DELETE</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220315 17:41:19.932" level="INFO">Sending key(s) ('CONTROL+A+DELETE',) to id:unsupervisedtools_isodata_lumping_parameter element.</msg>
-<msg timestamp="20220315 17:41:20.248" level="INFO">Pressing special key CONTROL down.</msg>
-<msg timestamp="20220315 17:41:20.248" level="INFO">Sending key A</msg>
-<msg timestamp="20220315 17:41:20.248" level="INFO">Pressing special key DELETE down.</msg>
-<msg timestamp="20220315 17:41:20.248" level="INFO">Releasing special key CONTROL.</msg>
-<msg timestamp="20220315 17:41:20.248" level="INFO">Releasing special key DELETE.</msg>
-<status status="PASS" starttime="20220315 17:41:19.931" endtime="20220315 17:41:20.303"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>${lumping_parameter}</arg>
-<arg>${value}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:20.304" level="INFO">Typing text '2' into text field 'id:unsupervisedtools_isodata_lumping_parameter'.</msg>
-<status status="PASS" starttime="20220315 17:41:20.303" endtime="20220315 17:41:20.514"/>
-</kw>
-<kw name="Press Keys" library="Selenium2Library">
-<arg>None</arg>
-<arg>TAB</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220315 17:41:20.515" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20220315 17:41:20.515" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20220315 17:41:20.515" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20220315 17:41:20.515" endtime="20220315 17:41:20.550"/>
-</kw>
-<status status="PASS" starttime="20220315 17:41:19.930" endtime="20220315 17:41:20.551"/>
-</kw>
-<kw name="Type Maximum Number of Lumping Pairs">
-<arg>5</arg>
-<kw name="Press Keys" library="Selenium2Library">
-<arg>${maximum_number_of_lumping_pairs}</arg>
-<arg>CONTROL+A+DELETE</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220315 17:41:20.553" level="INFO">Sending key(s) ('CONTROL+A+DELETE',) to id:unsupervisedtools_isodata_maximum_number_of_lumping_pairs element.</msg>
-<msg timestamp="20220315 17:41:20.879" level="INFO">Pressing special key CONTROL down.</msg>
-<msg timestamp="20220315 17:41:20.879" level="INFO">Sending key A</msg>
-<msg timestamp="20220315 17:41:20.879" level="INFO">Pressing special key DELETE down.</msg>
-<msg timestamp="20220315 17:41:20.879" level="INFO">Releasing special key CONTROL.</msg>
-<msg timestamp="20220315 17:41:20.879" level="INFO">Releasing special key DELETE.</msg>
-<status status="PASS" starttime="20220315 17:41:20.552" endtime="20220315 17:41:20.933"/>
-</kw>
-<kw name="Input Text" library="Selenium2Library">
-<arg>${maximum_number_of_lumping_pairs}</arg>
-<arg>${value}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:20.934" level="INFO">Typing text '5' into text field 'id:unsupervisedtools_isodata_maximum_number_of_lumping_pairs'.</msg>
-<status status="PASS" starttime="20220315 17:41:20.934" endtime="20220315 17:41:21.138"/>
-</kw>
-<kw name="Press Keys" library="Selenium2Library">
-<arg>None</arg>
-<arg>TAB</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220315 17:41:21.138" level="INFO">Sending key(s) ('TAB',) to page.</msg>
-<msg timestamp="20220315 17:41:21.139" level="INFO">Pressing special key TAB to browser.</msg>
-<msg timestamp="20220315 17:41:21.139" level="INFO">Releasing special key TAB.</msg>
-<status status="PASS" starttime="20220315 17:41:21.138" endtime="20220315 17:41:21.177"/>
-</kw>
-<status status="PASS" starttime="20220315 17:41:20.551" endtime="20220315 17:41:21.177"/>
-</kw>
-<kw name="Type Background Gray Level Value">
-<arg>1</arg>
-<kw name="Input Text" library="Selenium2Library">
-<arg>${background_gray_level_value}</arg>
-<arg>${value}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:21.179" level="INFO">Typing text '1' into text field 'id:unsupervisedtools_isodata_background_gray_level_value'.</msg>
-<status status="PASS" starttime="20220315 17:41:21.178" endtime="20220315 17:41:21.409"/>
-</kw>
-<status status="PASS" starttime="20220315 17:41:21.178" endtime="20220315 17:41:21.409"/>
-</kw>
-<kw name="Click Submit Button" library="Pages">
 <kw name="Click Button" library="Selenium2Library">
-<arg>${confirm_button}</arg>
+<arg>//*[@id="training_area"]/div/div/div/div[1]/div/div/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:21.411" level="INFO">Clicking button 'id:unsupervisedTools_confirmButton'.</msg>
-<status status="PASS" starttime="20220315 17:41:21.411" endtime="20220315 17:41:21.565"/>
+<msg timestamp="20220318 17:46:20.136" level="INFO">Clicking button '//*[@id="training_area"]/div/div/div/div[1]/div/div/button'.</msg>
+<status status="PASS" starttime="20220318 17:46:20.136" endtime="20220318 17:46:20.333"/>
 </kw>
-<status status="PASS" starttime="20220315 17:41:21.410" endtime="20220315 17:41:21.566"/>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="app"]/div[7]/div/div/div[2]/div[2]/div/div/div/div[3]/div/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220318 17:46:20.333" level="INFO">Clicking element '//*[@id="app"]/div[7]/div/div/div[2]/div[2]/div/div/div/div[3]/div/div'.</msg>
+<status status="PASS" starttime="20220318 17:46:20.333" endtime="20220318 17:46:20.517"/>
 </kw>
-<kw name="Check Success Notification" library="Pages">
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
-<arg>${notification_success}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220315 17:41:21.566" endtime="20220315 17:41:22.043"/>
+<kw name="Press Keys" library="Selenium2Library">
+<arg>${aoi_list}</arg>
+<arg>${area_layer}\n</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220318 17:46:20.518" level="INFO">Sending key(s) ('area\n',) to id:aois_list element.</msg>
+<msg timestamp="20220318 17:46:20.874" level="INFO">Sending keys area
+</msg>
+<status status="PASS" starttime="20220318 17:46:20.517" endtime="20220318 17:46:20.999"/>
 </kw>
-<kw name="Get Text" library="Selenium2Library">
-<var>${notification}</var>
-<arg>${notification_success}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220315 17:41:22.078" level="INFO">${notification} = Task 29456: Isodata Image Task Created Successful</msg>
-<status status="PASS" starttime="20220315 17:41:22.043" endtime="20220315 17:41:22.078"/>
+<kw name="Click Button" library="Selenium2Library">
+<arg>${create_area_layer_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220318 17:46:21.000" level="INFO">Clicking button 'id:create_layer_training'.</msg>
+<status status="PASS" starttime="20220318 17:46:20.999" endtime="20220318 17:46:21.432"/>
 </kw>
-<kw name="Should Contain" library="BuiltIn">
-<arg>${notification}</arg>
-<arg>${SUCCESS_NOTIFICATION}</arg>
-<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20220315 17:41:22.078" endtime="20220315 17:41:22.078"/>
+<kw name="Click Button" library="Selenium2Library">
+<arg>//*[@id="training_class_1"]/div/div/div/div[1]/div/div/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220318 17:46:21.432" level="INFO">Clicking button '//*[@id="training_class_1"]/div/div/div/div[1]/div/div/button'.</msg>
+<status status="PASS" starttime="20220318 17:46:21.432" endtime="20220318 17:46:22.036"/>
 </kw>
-<status status="PASS" starttime="20220315 17:41:21.566" endtime="20220315 17:41:22.079"/>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="app"]/div[10]/div/div/div[2]/div[2]/div/div/div/div[3]/div/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220318 17:46:22.037" level="INFO">Clicking element '//*[@id="app"]/div[10]/div/div/div[2]/div[2]/div/div/div/div[3]/div/div'.</msg>
+<status status="PASS" starttime="20220318 17:46:22.036" endtime="20220318 17:46:22.435"/>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<arg>${aoi_list}</arg>
+<arg>${class_layer}\n</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20220318 17:46:22.436" level="INFO">Sending key(s) ('road\n',) to id:aois_list element.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220318 17:46:22.818" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-33.png"&gt;&lt;img src="selenium-screenshot-33.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220318 17:46:22.507" endtime="20220318 17:46:22.818"/>
+</kw>
+<msg timestamp="20220318 17:46:22.833" level="FAIL">ElementNotInteractableException: Message: element not interactable: [object HTMLInputElement] has no size and location
+  (Session info: chrome=97.0.4692.0)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0114FDC3+2555331]
+	Ordinal0 [0x010E77F1+2127857]
+	Ordinal0 [0x00FE2E08+1060360]
+	Ordinal0 [0x00FE5524+1070372]
+	Ordinal0 [0x00FE53EE+1070062]
+	Ordinal0 [0x00FE5650+1070672]
+	Ordinal0 [0x01013DCF+1261007]
+	Ordinal0 [0x01013486+1258630]
+	Ordinal0 [0x0103E69E+1435294]
+	Ordinal0 [0x01027B0C+1342220]
+	Ordinal0 [0x010375FA+1406458]
+	Ordinal0 [0x01027976+1341814]
+	Ordinal0 [0x010036B6+1193654]
+	Ordinal0 [0x01004546+1197382]
+	GetHandleVerifier [0x012E9622+1619522]
+	GetHandleVerifier [0x0139882C+2336844]
+	GetHandleVerifier [0x011E23E1+541697]
+	GetHandleVerifier [0x011E1443+537699]
+	Ordinal0 [0x010ED18E+2150798]
+	Ordinal0 [0x010F1518+2168088]
+	Ordinal0 [0x010F1660+2168416]
+	Ordinal0 [0x010FB330+2208560]
+	BaseThreadInitThunk [0x7609FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77007A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77007A6E+238]
+</msg>
+<status status="FAIL" starttime="20220318 17:46:22.435" endtime="20220318 17:46:22.833"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>${create_area_layer_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220318 17:46:22.833" endtime="20220318 17:46:22.833"/>
+</kw>
+<status status="FAIL" starttime="20220318 17:46:19.131" endtime="20220318 17:46:22.834"/>
 </kw>
 <kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220315 17:41:22.079" endtime="20220315 17:41:24.349"/>
+<status status="PASS" starttime="20220318 17:46:22.835" endtime="20220318 17:46:25.153"/>
 </kw>
-<status status="PASS" starttime="20220315 17:40:55.703" endtime="20220315 17:41:24.351"/>
+<status status="FAIL" starttime="20220318 17:45:57.980" endtime="20220318 17:46:25.153">ElementNotInteractableException: Message: element not interactable: [object HTMLInputElement] has no size and location
+  (Session info: chrome=97.0.4692.0)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0114FDC3+2555331]
+	Ordinal0 [0x010E77F1+2127857]
+	Ordinal0 [0x00FE2E08+1060360]
+	Ordinal0 [0x00FE5524+1070372]
+	Ordinal0 [0x00FE53EE+1070062]
+	Ordinal0 [0x00FE5650+1070672]
+	Ordinal0 [0x01013DCF+1261007]
+	Ordinal0 [0x01013486+1258630]
+	Ordinal0 [0x0103E69E+1435294]
+	Ordinal0 [0x01027B0C+1342220]
+	Ordinal0 [0x010375FA+1406458]
+	Ordinal0 [0x01027976+1341814]
+	Ordinal0 [0x010036B6+1193654]
+	Ordinal0 [0x01004546+1197382]
+	GetHandleVerifier [0x012E9622+1619522]
+	GetHandleVerifier [0x0139882C+2336844]
+	GetHandleVerifier [0x011E23E1+541697]
+	GetHandleVerifier [0x011E1443+537699]
+	Ordinal0 [0x010ED18E+2150798]
+	Ordinal0 [0x010F1518+2168088]
+	Ordinal0 [0x010F1660+2168416]
+	Ordinal0 [0x010FB330+2208560]
+	BaseThreadInitThunk [0x7609FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77007A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77007A6E+238]
+</status>
 </test>
-<doc>Test Isodata tool.</doc>
-<status status="PASS" starttime="20220315 17:40:55.329" endtime="20220315 17:41:24.353"/>
+<status status="FAIL" starttime="20220318 17:45:57.590" endtime="20220318 17:46:25.153"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="3-Isodata">3-Isodata</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Training">Training</stat>
 </suite>
 </statistics>
 <errors>
